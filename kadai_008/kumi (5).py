@@ -1,0 +1,22 @@
+
+
+#ランダムな整数を利用するためにrandomモジュールをimport
+import random
+var = random.randint(0,30)
+print(var)
+
+# 変数varが、3の倍数の場合は「Fizz」を出力
+if var % 3 == 0:
+  print("Fizz")
+
+#5の倍数の場合は「Buzz」を出力
+elif var % 5 == 0:
+  print("Buzz")
+
+#3と5の倍数の両方に該当する場合は「FizzBuzz」を出力
+elif var % 15 == 0:
+  print("FizzBuzz")
+
+#それ以外はvarの値を出力
+else:
+  print(var)
